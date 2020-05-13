@@ -14,7 +14,7 @@ class Song
     @@count += 1
     @@artists << artist
     @@genres << genre
-    @@genre_count[genre] += 1
+    @@genre_count
     
     
   end
@@ -30,7 +30,11 @@ class Song
     @@genres.uniq
   end
   def self.genre_count
-    @@genre_count
+    @@genres.each do |k,v|
+      if @@genre_count[k] == k 
+        k += 1 
+      else
+        @@genre_count[k] = value
   end
   
 end
