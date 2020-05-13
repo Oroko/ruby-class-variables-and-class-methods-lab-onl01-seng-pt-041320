@@ -34,7 +34,7 @@ class Song
       if @@genre_count[k] == k 
         k += 1 
       else
-        @@genre_count[k] = value
+        @@genre_count[k] = v
   end
   
 end
