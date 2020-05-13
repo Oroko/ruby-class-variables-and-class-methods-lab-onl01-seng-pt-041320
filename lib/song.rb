@@ -35,6 +35,7 @@ class Song
         k += 1 
       else
         @@genre_count[k] = v
+      end
   end
   
 end
